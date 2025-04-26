@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Path</title>
+  </head>
+  <body>
+    <svg height="210" width="400">
+      <path d="M150 0 L75 200 L255 200 Z" stroke="red" fill="white" />
+    </svg>
+
+    <!-- 
+        M = moveto
+        L = lineto
+        H = horizontal lineto
+        V = vertical lineto
+        C = curveto
+        S = smooth curveto
+        Q = quadratic Bézier curve
+        T = smooth quadratic Bézier curveto
+        A = elliptical Arc
+        Z = closepath
+        -->
+
+    <!-- 
+        M → İmleci bir noktaya götürür (çizmeden).
+        L → Bir çizgi çizer.
+        H → Yatay çizgi çizer.
+        V → Dikey çizgi çizer.
+        C → Eğri çizer (Bezier Curve).
+        S → Smooth (yumuşak geçişli) eğri çizer.
+        Q → Quadratic Bezier Curve çizer (daha basit eğri).
+        T → Smooth quadratic Bezier çizer.
+        A → Elips yayı çizer (yuvarlak, oval şekiller için).
+        Z → Çizimi başladığın yere kapatır (path'i tamamlar). 
+        -->
+  </body>
+</html>

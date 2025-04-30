@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Block</title>
+    <style>
+      span.a {
+        display: inline;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 3px solid blue;
+        background-color: yellow;
+      }
+      span.b {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 3px solid blue;
+        background-color: yellow;
+      }
+      span.c {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 3px solid blue;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt
+      non alias quaerat eum? <span class="a">Velit ducimus,</span> tempora iste
+      voluptates rem sit eaque architecto quam aut iure provident omnis,
+      laboriosam pariatur?
+    </p>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+      nesciunt, velit rem sit eveniet nam ducimus voluptatum?
+      <span class="b"
+        >A at consequatur accusantium nulla, tempora magnam architecto officiis
+        veniam, necessitatibus mollitia atque.</span
+      >
+    </p>
+    <hr />
+    <p>
+      <span class="c">Lorem ipsum dolor sit,</span> amet consectetur adipisicing
+      elit. Omnis exercitationem est aspernatur quibusdam maxime cum a sequi
+      voluptates, minus officia rerum optio eveniet quia hic eligendi
+      voluptatum, et inventore dolore.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- <style>
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        /* border: 2px solid red; */
+        /* border: none;
+        border-bottom: 2px solid red; */
+      }
+
+      input:focus {
+        background-color: rgb(150, 153, 143);
+      }
+
+      input[type="search"] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url("../search-icon.png");
+        background-size: 25px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input[type="search"]:focus {
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+        font-size: 16px;
+        padding: 16px 20px 16px 24px;
+        background-color: rgb(39, 87, 39);
+        color: #fff;
+      }
+    </style> -->
+
+    <style>
+      .row:after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .col-25{
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+
+      .col-75{
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+
+      .container{
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      *{
+        box-sizing: border-box;
+      }
+
+      input[type="text"]{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label{
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      button{
+        padding: 12px;
+        float: right;
+        margin-top: 10px;
+        background-color: darkolivegreen;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover{
+        background-color: #000;
+      }
+
+      @media screen and (max-width: 600px){
+        .col-25, .col-75, button {
+          width: 100%;
+          margin-top: 0;
+        }
+
+        button{
+          margin-top: 20px;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <div style="margin-top: 20px">
+      <input type="search" />
+    </div>
+    <hr />
+    <div style="margin-top: 20px">
+      <form>
+        <div>
+          <label for="name">Personal Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label for="age">Personal Age</label>
+          <input type="number" id="age" value="18" />
+        </div>
+        <div>
+          <button>Save</button>
+        </div>
+      </form>
+      <hr /> -->
+      <form>
+        <div class="container">
+        <div class="row">
+          <div class="col-25">
+            <label for="name">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" placeholder="Your Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lastname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lastname" placeholder="Your Last Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="age">Age</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="age" placeholder="Age...">
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </body>
+</html>

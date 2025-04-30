@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Backgrounds</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        background-image: url("random.jpg"), url("images.jpeg");
+        background-size: 100px 100px, 100%;
+        background-repeat: no-repeat;
+        background-position: right bottom, left top;
+        width: 100%;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

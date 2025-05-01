@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Style</title>
+    <style>
+      .polarid {
+        width: 80%;
+        background-color: white;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 80px 0 rgba(173, 33, 33, 0.2), 0, 6px, 20px, 0,
+          rgba(0, 0, 0, 0.19);
+      }
+
+      .container {
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      img {
+        /* border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 5px;
+        width: 150px; */
+
+        /* max-width: 100%;
+        height: auto; */
+
+        /* width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; */
+      }
+
+      #filter {
+        width: 50%;
+        /* filter: grayscale(100%); */
+        /* filter: blur(2px); */
+        /* filter: brightness(250%); */
+        /* filter: contrast(180%); */
+        /* filter: hue-rotate(190deg); */
+        /* filter: invert(100%); */
+        /* filter: opacity(50%); */
+        /* filter: saturate(7); */
+        /* filter: sepia(100%); */
+        filter: drop-shadow(8px 8px 10px green);
+      }
+
+      .container {
+        position: relative;
+        width: 50%;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: #008cba;
+      }
+
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <a href="./images.jpeg">
+      <img src="./images.jpeg" alt="" />
+    </a> -->
+    <div class="container">
+      <img class="image" src="images.jpeg" alt="" />
+      <div class="overlay">
+        <div class="text">Ataberk Kaya</div>
+      </div>
+    </div>
+
+    <img id="filter" src="random.jpg" alt="" />
+
+    <div class="polaroid">
+      <img src="random.jpg" alt="" style="width: 100%; opacity: 0.5" />
+      <div class="container"><p>Lorem ipsum dolor sit amet.</p></div>
+    </div>
+
+    <div class="polarid">
+      <img src="images.jpeg" alt="" style="width: 100%" />
+      <div class="container"><p>Lorem ipsum dolor sit amet.</p></div>
+    </div>
+  </body>
+</html>

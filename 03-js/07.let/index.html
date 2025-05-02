@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <script>
+      let x = "Ataberk Kaya";
+      // let x; ERROR
+
+      var y = "Ataberk Kaya";
+      var y;
+
+      {
+        let x = 2;
+      }
+      console.log(x); // ERROR
+
+      {
+        var x2 = 2;
+      }
+      console.log(x2);
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

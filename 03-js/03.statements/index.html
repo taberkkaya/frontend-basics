@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statements</title>
+  </head>
+  <body>
+    <h1 id="text" onclick="myFunction()">Welcome</h1>
+    <button onclick="myFunction()">GO</button>
+    <script>
+      //js statements
+
+      // let a,b,c = 5;
+      // let a , b, c;
+      let a = 5,
+        b = 10,
+        c = a / b;
+
+      // let a = 5;
+      // let b = 25;
+      // let c = a + b;
+
+      // a = 5;
+      // b = 10;
+      // c = a + b;
+
+      document.getElementById("text").innerHTML = c;
+
+      function myFunction() {
+        let a = 5,
+          b = 10,
+          c = (a * 5) / (b * 12) + 30;
+
+        document.getElementById("text").innerHTML = c;
+      }
+    </script>
+  </body>
+</html>

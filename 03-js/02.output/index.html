@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Output</title>
+    <style>
+      body {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+      repudiandae!
+    </h1>
+
+    <button onclick="window.print()">Print</button>
+    <script>
+      //inner html
+      document.getElementById("text").innerHTML = " = " + (5 + 11);
+
+      //document write
+      document.write(5 + 6);
+
+      //window alert
+      // window.alert("Welcome");
+      // window.alert(5 + 6);
+      // alert(5 + 6);
+
+      //console log
+      console.log("Welcome");
+      console.log(5 + 6);
+
+      //window print
+      // window.print();
+    </script>
+  </body>
+</html>

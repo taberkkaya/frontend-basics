@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <script>
+      let car = {
+        name: "Fiat",
+        age: 20,
+        color: "white",
+        fullName: function () {
+          return this.name + " " + this.age;
+        },
+      };
+
+      console.log(car);
+      console.log(car.fullName());
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

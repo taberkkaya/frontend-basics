@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Search</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <script>
+      let x = "Ataberk Kaya - Software Developer";
+      let y;
+
+      //indexOf
+      y = x.indexOf("a");
+      y = x.indexOf("a", 6);
+
+      //lastIndexOf
+      y = x.lastIndexOf("a");
+      y = x.lastIndexOf("a", 5);
+
+      //search
+      y = x.search("Kaya");
+
+      //match
+      y = x.match("a");
+      y = x.match(/a/gi);
+
+      //matchAll
+      y = x.matchAll("a");
+      y = x.matchAll(/a/g);
+      // console.log(Array.from(y));
+
+      //includes
+      y = x.includes("a");
+
+      //startsWith
+      y = x.startsWith("A");
+      y = x.startsWith("a", 6);
+
+      //endsWith
+      y = x.endsWith("a");
+      y = x.endsWith("a", 12);
+
+      console.log(y);
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

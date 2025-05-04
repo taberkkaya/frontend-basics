@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <script>
+      // let x = "     Welcome to JS     ";
+      let x = "Welcome to JS";
+      let y;
+
+      //slice
+      y = x.slice(2, 5);
+      y = x.slice(-2);
+
+      //substring
+      y = x.substring(2, 5);
+      y = x.substring(-2);
+
+      //substr
+      y = x.substr(2, 5);
+
+      //replace
+      y = x.replace("to JS", "to World!");
+      y = x.replace("o", "a");
+
+      //replaceAll
+      y = x.replaceAll("o", "a");
+
+      //toUpperCase
+      y = x.toUpperCase();
+
+      //toLowerCase
+      y = x.toLowerCase();
+
+      //concat
+      y = x.concat("!");
+
+      //trim
+      y = x.trim();
+      y = x.trimStart();
+      y = x.trimEnd();
+
+      //pad
+      y = x.padStart(20, "x");
+      y = x.padEnd(20, "x");
+
+      //charAt
+      y = x.charAt(2);
+      y = x.charAt(1);
+
+      //charCodeAt
+      y = x.charCodeAt(2);
+
+      //split
+      y = x.split(" ");
+      y = x.split("to");
+
+      console.log(y);
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

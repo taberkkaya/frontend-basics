@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <script>
+      let x = 99999999999999999;
+      x = 9999999999999999n;
+      x = BigInt(9999999999999999n);
+      let y = 1231231231231321231n;
+      // console.log(typeof x);
+      // console.log(x);
+      // console.log(x * y);
+      x = 4n;
+      // console.log(x / 1);
+      //index.html:19 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions at index.html:19:21
+
+      console.log(Number(x) / 1);
+
+      x = Number.MAX_SAFE_INTEGER;
+      x = Number.MIN_SAFE_INTEGER;
+      console.log(x);
+      console.log(Number.isInteger(x));
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

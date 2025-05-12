@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      console.log(fruits.toString());
+      console.log(fruits.join("-"));
+      console.log(fruits.pop());
+      console.log(fruits.push("Cherry"));
+      console.log(fruits.shift());
+      console.log(fruits.unshift("Banana"));
+      delete fruits[2];
+
+      console.log(fruits);
+
+      const myFriends = ["Ayşe", "Fatma", "Hayriye"];
+      const ages = [10, 20, 30];
+      var result = fruits.concat(myFriends, ages);
+      console.log(result);
+
+      myFriends.splice(1, 0, "Sena");
+      myFriends.splice(0, 2);
+      console.log(myFriends);
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

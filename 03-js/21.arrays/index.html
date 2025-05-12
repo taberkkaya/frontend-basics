@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <script>
+      let car1 = "BMW";
+      let car2 = "Cherry";
+      let car3 = "Volvo";
+
+      // let cars = ["BMW", "Cherry", "Volvo"];
+      let cars = new Array({ carName: "BMW", year: 2222 }, "Cherry", "Volvo");
+      cars[1] = "Renault";
+      cars[1] = true;
+
+      console.log(cars);
+
+      let cars2 = [];
+
+      cars2.push(car1);
+      cars2.push(car2);
+      cars2.push(car3);
+      console.log(cars2);
+
+      console.log(cars[0]);
+      console.log(cars[4]);
+
+      cars[0].carName = "Merco";
+      console.log(cars[0].carName);
+
+      cars.push(car3);
+
+      cars[10] = { carName: "Deneme", year: 1200 };
+      console.log(cars);
+      console.log(cars[11]);
+      console.log(cars.length);
+      console.log(cars[cars.length - 1]);
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

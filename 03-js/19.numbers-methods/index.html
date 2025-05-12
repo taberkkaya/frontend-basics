@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Methods</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <script>
+      let x = 10;
+      x = x.toString();
+      x = 9.643;
+      // x = x.toExponential();
+      // x = x.toExponential(6);
+      x = 9.656;
+      // x = x.toFixed(1);
+      console.log(x.toPrecision());
+      console.log(x.toPrecision(2));
+
+      console.log(x);
+      console.log(typeof x);
+
+      x = 123;
+      console.log(x.valueOf());
+
+      //Number
+      let y = "10";
+      console.log(Number(y));
+      console.log(Number(false));
+      console.log(Number(true));
+      console.log(Number("10a"));
+      console.log(Number(new Date("1970-01-02")));
+
+      //parseInt
+      console.log(parseInt(10));
+      console.log(parseInt("10"));
+      console.log(parseInt("10.33"));
+      console.log(parseInt(10.33));
+      console.log(parseInt("10 YEARS"));
+      console.log(parseInt("YEARS 10"));
+
+      //parseFloat
+      console.log(parseFloat("YEARS 10"));
+      console.log(parseFloat("10"));
+
+      console.log(Number.isInteger(x));
+      console.log(Number.isInteger(x));
+      console.log(Number.isInteger(x));
+      console.log(Number.isInteger(10.33));
+      console.log(Number.isInteger("10.33"));
+
+      x = 10.33;
+      console.log(Number.isInteger(x));
+      console.log(Number.isSafeInteger(x));
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

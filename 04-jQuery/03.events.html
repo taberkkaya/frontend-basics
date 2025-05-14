@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head</h1>
+
+    <form action="">
+      <button type="submit">Click me</button>
+      <input type="text" />
+    </form>
+
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // $("button").click(() => {
+        //   //action
+        //   // alert("Clicked...");
+        // });
+        // $("button").dblclick(() => {
+        //   alert("Double clicked...");
+        // });
+        // $("button").mouseenter(function () {
+        //   $(this).hide();
+        // });
+        // $("button").mouseleave(function () {
+        //   $(this).show();
+        // });
+
+        // $("input").keyup(function () {
+        //   console.log("Yazıyor");
+        // });
+
+        // $("input").keydown(function () {
+        //   console.log("Yazıyor");
+        // });
+
+        // $("input").keypress(function () {
+        //   console.log("Yazıyor");
+        // });
+
+        // $("input").hover(function () {
+        //   console.log("hover");
+        // });
+
+        // $("button").click(function (e) {
+        //   e.preventDefault();
+        // });
+
+        // $("form").submit(function () {
+        //   console.log("form tetiklendi");
+        // });
+
+        // $("input").on("click", function () {
+        //   console.log("clicked");
+        // });
+
+        $("button").on({
+          mouseenter: function () {
+            console.log("mouse enter");
+          },
+          mouseleave: function () {
+            console.log("mouse leave");
+          },
+          click: function (e) {
+            e.preventDefault();
+            console.log("click");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

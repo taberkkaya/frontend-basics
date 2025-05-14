@@ -8,7 +8,19 @@
   <body>
     <h1 id="text">Welcome</h1>
     <p id="demo"></p>
-    <script></script>
+    <script>
+      const numbers = [1, 2, 23, 2, 312, 3];
+      numbers.forEach((element) => {
+        // console.log(element);
+      });
+
+      numbers.forEach(myFunction);
+
+      function myFunction(value, index, array) {
+        console.log(index, value);
+        console.log(array);
+      }
+    </script>
     <!-- <script src="script.js"></script> -->
   </body>
 </html>

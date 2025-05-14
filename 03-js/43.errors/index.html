@@ -8,7 +8,16 @@
   <body>
     <h1 id="text">Welcome</h1>
     <p id="demo"></p>
-    <script></script>
+    <script>
+      try {
+        alert("Error");
+        // alert1("Error");
+      } catch (error) {
+        console.log(error.message);
+      } finally {
+        console.log("Run");
+      }
+    </script>
     <!-- <script src="script.js"></script> -->
   </body>
 </html>

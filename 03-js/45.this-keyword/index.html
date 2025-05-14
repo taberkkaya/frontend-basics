@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <p id="demo"></p>
+    <button onclick="this.style.color='red'">Button</button>
+    <script>
+      let x = this;
+
+      const person = {
+        firstName: "Ataberk",
+        lastName: "Kaya",
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+
+      console.log(person.fullName());
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

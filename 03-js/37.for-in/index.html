@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <p id="demo"></p>
+    <script>
+      const numbers = [1, 2, 3, 4, 5, 6, 7];
+      let text = "";
+      for (let x in numbers) {
+        text += numbers[x] + "<br>";
+      }
+
+      const person = { name: "Ataberk", lastName: "Kaya", age: 24 };
+      for (let x in person) {
+        text += person[x] + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = text;
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

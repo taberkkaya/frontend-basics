@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text">Welcome</h1>
+    <p id="demo"></p>
+    <script>
+      let jsonText = `   
+      {
+        "key": "value",
+        "key2": "value",
+        "key3": "value",
+        "key4": "value",
+        "key5" : {
+        "key" : "value"
+        }
+      }`;
+
+      console.log(jsonText);
+      console.log(JSON.parse(jsonText));
+      console.log(JSON.stringify(JSON.parse(jsonText)));
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

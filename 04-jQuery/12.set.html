@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <p id="test1">Lorem ipsum dolor sit amet.</p>
+    <p id="test2">Lorem ipsum dolor sit amet.</p>
+    <p>Input File: <input type="text" id="test3" value="Ataberk Kaya" /></p>
+
+    <button id="button1">Set Text</button>
+    <button id="button2">Set HTML</button>
+    <button id="button3">Set Value</button>
+
+    <button id="button4">Click</button>
+
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#button1").click(() => {
+          $("#test1").text("Hello World!");
+        });
+
+        $("#button2").click(() => {
+          $("#test2").html(`
+            <b>Hello World!</b>
+          `);
+        });
+
+        $("#button3").on("click", function () {
+          $(this)
+            .css({ color: "red", "background-color": "black" })
+            .text("Button");
+          $("#test3").val("ataberkkaya@ataberkkaya.com");
+        });
+
+        $("#button4").on("click", function () {
+          // $(this).attr("type", "submit");
+          $(this).attr({
+            type: "submit",
+            title: "test",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

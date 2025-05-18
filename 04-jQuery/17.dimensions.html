@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        height: 100px;
+        width: 100px;
+        border: 1px solid red;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <div id="div1"></div>
+    <button id="button">Click</button>
+    <script src="./jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(() => {
+          console.log($("#div1").height());
+          console.log($("#div1").width());
+          console.log($("#div1").innerHeight());
+          console.log($("#div1").innerWidth());
+          console.log($("#div1").outerHeight());
+          console.log($("#div1").outerWidth());
+
+          console.log("----------------------------");
+
+          $("#div1").height("150");
+          $("#div1").width("150");
+          $("#div1").innerHeight("150");
+          $("#div1").innerWidth("150");
+          $("#div1").outerHeight("150");
+          $("#div1").outerWidth("150");
+
+          console.log($("#div1").height());
+          console.log($("#div1").width());
+          console.log($("#div1").innerHeight());
+          console.log($("#div1").innerWidth());
+          console.log($("#div1").outerHeight());
+          console.log($("#div1").outerWidth());
+        });
+      });
+    </script>
+  </body>
+</html>

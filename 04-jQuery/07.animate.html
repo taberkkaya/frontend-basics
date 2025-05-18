@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: greenyellow;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        margin: 10px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <button>Start</button>
+    <div>HELLO</div>
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(() => {
+          $("div").animate(
+            {
+              // left: "250px",
+              // opacity: "0.5",
+              // height: "+=150px",
+              // width: "200px",
+
+              width: "toggle",
+              height: "toggle",
+            },
+            "fast"
+          );
+
+          // $("div").animate(
+          //   {
+          //     fontSize: "3em",
+          //   },
+          //   1000
+          // );
+        });
+      });
+    </script>
+  </body>
+</html>

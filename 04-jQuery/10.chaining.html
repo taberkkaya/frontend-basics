@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <button>Tıkla</button>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+      perferendis molestiae minima est eveniet blanditiis placeat ipsa magni
+      deleniti vel inventore quasi aliquid, temporibus repudiandae ratione?
+      Amet, perspiciatis! Animi, nemo.
+    </p>
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(() => {
+          $("p").css("color", "red").slideUp(2000).slideDown(2000);
+        });
+      });
+    </script>
+  </body>
+</html>

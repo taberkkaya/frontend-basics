@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <button>Add</button>
+    <button id="click" onclick="appendText()">Click</button>
+    <p>Hello.</p>
+    <p id="test">Lorem, ipsum dolor.</p>
+    <ol>
+      <li>Test 1</li>
+      <li>Test 2</li>
+      <li>Test 3</li>
+    </ol>
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("button[id!=click]").click(() => {
+          $("p").append("<b> Ataberk Kaya </b>");
+          $("ol").append("<li>Ataberk Kaya</li>");
+        });
+
+        $("button[id=click]").click(() => {
+          // $("p").after("Ataberk Kaya");
+          // $("p").before("Ataberk Kaya");
+          $("p").prepend("Ataberk Kaya");
+        });
+      });
+
+      function appendText() {
+        var txt1 = "<p>Text</p>";
+        var txt2 = $("<p></p>").text("Text");
+
+        var txt3 = document.createElement("p");
+        txt3.innerHTML = "Text";
+
+        $("body").append(txt1, txt2, txt3);
+      }
+    </script>
+  </body>
+</html>

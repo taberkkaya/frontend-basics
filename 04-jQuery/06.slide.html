@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #panel,
+      #show,
+      #hide,
+      #toggle {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <div id="show">Göster</div>
+    <div id="hide">Gizle</div>
+    <div id="toggle">Göster / Gizle</div>
+    <div id="panel">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui minus id
+      illum, libero ducimus quisquam, ullam, in ipsam autem corporis dolorem.
+      Obcaecati facilis, perspiciatis est sequi laboriosam culpa asperiores
+      delectus?
+    </div>
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#show").on("click", () => {
+          $("#panel").slideDown("slow");
+        });
+
+        $("#hide").click(() => {
+          $("#panel").slideUp("slow");
+        });
+
+        $("#toggle").click(() => {
+          $("#panel").slideToggle("fast");
+        });
+      });
+    </script>
+  </body>
+</html>

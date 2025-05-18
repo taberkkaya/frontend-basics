@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .descendants * {
+        display: block;
+        border: 2px solid lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <hr />
+    <div class="descendants" style="width: 500px">
+      div (current element)
+      <p>
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+      <p>
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+    </div>
+
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // $("div").children().css({ color: "red", border: "2px solid red" });
+        // $("div").find("span").css({ color: "red", border: "2px solid red" });
+        $("div").find("*").css({ color: "red", border: "2px solid red" });
+      });
+    </script>
+  </body>
+</html>

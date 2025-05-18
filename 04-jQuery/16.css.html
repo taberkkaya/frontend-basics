@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <button>Click</button>
+    <p class="test">Lorem, ipsum.</p>
+
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(() => {
+          // $(".test").css("color", "red");
+          $(".test").css({
+            color: "red",
+            background: "black",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

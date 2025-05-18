@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head</h1>
+
+    <p>
+      <i> Lorem ipsum dolor</i>
+      <b>
+        sit amet consectetur, adipisicing elit. Delectus, illo suscipit?
+        Doloremque,</b
+      >
+      rerum dolore libero optio dolorem reprehenderit nihil distinctio sit minus
+      labore unde perferendis nemo deleniti nulla. Praesentium, iusto?
+    </p>
+    <input type="text" />
+    <a href="www.google.com">Lorem.</a>
+    <button>Tıkla</button>
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(() => {
+          // console.log($("p").text());
+          // console.log($("p").html());
+          // console.log($("input").val());
+          console.log($("a").attr("href"));
+        });
+      });
+    </script>
+  </body>
+</html>

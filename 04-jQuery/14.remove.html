@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maxime
+        corrupti ea dolorum aspernatur facilis minus aut suscipit? Ab corrupti
+        reiciendis sapiente ea minus accusantium hic possimus nisi! Architecto,
+        quo?
+      </p>
+    </div>
+    <button>Delete</button>
+
+    <script src="./jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(() => {
+          // $("div").remove();
+          $("div").empty();
+        });
+      });
+    </script>
+  </body>
+</html>

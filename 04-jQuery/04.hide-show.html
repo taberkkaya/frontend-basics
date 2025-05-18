@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <button id="show">Göster</button>
+    <button id="hide">Gizle</button>
+    <button id="showOrHide">Göster / Gizle</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic
+      provident natus non perspiciatis, nobis placeat corrupti quos tempore
+      commodi, ipsa eos? Quaerat animi, corporis molestiae optio autem rem
+      laborum!
+    </p>
+
+    <script src="./jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#show").hide();
+
+        $("#show").click(() => {
+          $("p").show(500);
+          $("#show").hide();
+          $("#hide").show();
+        });
+
+        $("#hide").click(() => {
+          $("p").hide("slow");
+          $("#show").show();
+          $("#hide").hide();
+        });
+
+        $("#showOrHide").on("click", () => {
+          $("p").toggle(500);
+        });
+      });
+    </script>
+  </body>
+</html>

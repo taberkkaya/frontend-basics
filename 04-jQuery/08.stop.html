@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #panel,
+      #flip {
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #555;
+        color: white;
+        border: 1px solid #666;
+        border-radius: 3px;
+      }
+
+      #panel {
+        display: none;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Head</h1>
+    <button id="stop">Stop</button>
+    <div id="flip">Click</div>
+    <div id="panel">Hello World!</div>
+
+    <script src="./jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(() => {
+          $("#panel").slideDown(5000);
+        });
+
+        $("#stop").click(() => {
+          $("#panel").stop();
+        });
+      });
+    </script>
+  </body>
+</html>
